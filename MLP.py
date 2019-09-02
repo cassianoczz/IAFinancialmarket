@@ -2,13 +2,12 @@ from sklearn.neural_network import MLPClassifier
 import pandas as pd
 from sklearn.metrics import accuracy_score
 
-tabelaOR = pd.read_csv(r'')
+tabelaXOR = pd.read_csv(r'xor.csv')
 
-df = pd.DataFrame(tabelaOR)
-print(df)
+df = load_wine(return_X_y=True)
 
-X = df[['x1','x2']]
-Y = df['y']
+X = df[0][1:,2:]
+Y = df[1][0:-1]
 
 
 ppn = Perceptron(n_iter=10, eta0=0.2, random_state=0)
