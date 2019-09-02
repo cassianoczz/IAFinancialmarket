@@ -7,7 +7,7 @@ tabela = pd.read_csv(r'~/IAFinancialmarket/B3SA3_1.2.1.csv')
 df = pd.DataFrame(tabela)
 print(df)
 
-X = df[['Date','Fechamento','Abertura','Maxima','Minima','Chikou','Tekan','Kinju','Senkou A','Senkou B','Chikou0','Chikou1','Chikou2','T/K 0','T/K 1','T/K 2','Preco X T/K 0','Preco X T/K 1','Preco X T/K 2','Kumo 0','Kumo 1','Kumo 2']]
+X = df['Date','Fechamento','Abertura','Maxima','Minima','Chikou','Tekan','Kinju','Senkou A','Senkou B','Chikou0','Chikou1','Chikou2','T/K 0','T/K 1','T/K 2','Preco X T/K 0','Preco X T/K 1','Preco X T/K 2','Kumo 0','Kumo 1','Kumo 2']
 Y = df['Resultado']
 
 ppn = MLPClassifier()
