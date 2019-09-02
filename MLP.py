@@ -2,15 +2,15 @@ from sklearn.neural_network import MLPClassifier
 import pandas as pd
 from sklearn.metrics import accuracy_score
 
-tabelaXOR = pd.read_csv(r'xor.csv')
+tabela = pd.read_csv(r'B3SA3_1.2.1csv')
 
-df = load_wine(return_X_y=True)
+df = pd.DataFrame(tabela)
+print(df)
 
-X = df[0][1:,2:]
-Y = df[1][0:-1]
+X = df[['Date','Fechamento','Abertura','Maxima','Minima','Chikou','Tekan','Kinju','Senkou A','Senkou B','Chikou0','Chikou1','Chikou2','T/K 0','T/K 1','T/K 2','Preco X T/K 0','Preco X T/K 1','Preco X T/K 2','Kumo 0','Kumo 1','Kumo 2']]
+Y = df['Resultado']
 
-
-ppn = Perceptron(n_iter=10, eta0=0.2, random_state=0)
+ppn = MLPClassifier()
 
 ppn.fit(X, Y)
 
