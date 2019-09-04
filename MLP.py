@@ -2,7 +2,7 @@ from sklearn.neural_network import MLPClassifier
 import pandas as pd
 from sklearn.metrics import accuracy_score
 
-tabela = pd.read_csv(r'~/IAFinancialmarket/Tabelatestecommaredu.csv')
+tabela = pd.read_csv(r'~/IAFinancialmarket/Tabelatestecomma.csv')
 
 df = pd.DataFrame(tabela)
 print(df)
