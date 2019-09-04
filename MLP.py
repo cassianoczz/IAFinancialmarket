@@ -2,7 +2,7 @@ from sklearn.neural_network import MLPClassifier
 import pandas as pd
 from sklearn.metrics import accuracy_score
 
-tabela = pd.read_csv(r'~/IAFinancialmarket/BTC_USD_1.2.1.csv')
+tabela = pd.read_csv(r'~/IAFinancialmarket/Tabelateste.csv')
 
 df = pd.DataFrame(tabela)
 print(df)
