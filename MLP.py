@@ -1,6 +1,7 @@
 from sklearn.neural_network import MLPClassifier
 import pandas as pd
 from sklearn.metrics import accuracy_score
+from datetime import datetime
 
 tabela = pd.read_csv(r'~/IAFinancialmarket/BTC_USD_1.2.1P.csv')
 
@@ -19,7 +20,7 @@ y_pred = ppn.predict(X)
 print(y_pred)
 
 with open('Resultados.txt','a') as arquivo:
-    arquivo.write(str('Accuracy: %.2f' % accuracy_score(Y, y_pred)))
+    arquivo.write(str((datetime.now().strftime("%d/%m/%Y %H:%M:%S")) 'Accuracy: %.2f' % accuracy_score(Y, y_pred)))
     arquivo.close()
 
 print('Accuracy: %.2f' % accuracy_score(Y, y_pred))
