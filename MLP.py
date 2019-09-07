@@ -3,6 +3,9 @@ import pandas as pd
 from sklearn.metrics import accuracy_score
 from datetime import datetime
 
+DTNow = datetime.now()
+DateTime = DTNow.strftime("%d/%m/%Y %H:%M:%S") 
+
 tabela = pd.read_csv(r'~/IAFinancialmarket/BTC_USD_1.2.1P.csv')
 
 df = pd.DataFrame(tabela)
@@ -20,7 +23,7 @@ y_pred = ppn.predict(X)
 print(y_pred)
 
 with open('Resultados.txt','a') as arquivo:
-    arquivo.write(str(datetime.now().strftime("%d/%m/%Y %H:%M:%S") 'Accuracy: %.2f' % accuracy_score(Y, y_pred)))
+    arquivo.write(str(DateTime 'Accuracy: %.2f' % accuracy_score(Y, y_pred)))
     arquivo.close()
 
 print('Accuracy: %.2f' % accuracy_score(Y, y_pred))
