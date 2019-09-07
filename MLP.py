@@ -24,7 +24,7 @@ print(y_pred)
 
 with open('Resultados.txt','a') as arquivo:
     arquivo.write(str(DateTime))
-    arquivo.write(str('Accuracy: %.2f' % accuracy_score(Y, y_pred)))
+    arquivo.write(str(' Accuracy: %.2f \n' % accuracy_score(Y, y_pred)))
     arquivo.close()
 
 print('Accuracy: %.2f' % accuracy_score(Y, y_pred))
