@@ -18,7 +18,8 @@ y_pred = ppn.predict(X)
 
 print(y_pred)
 
-open('Resultados.txt','a') as arquivo:
+with open('Resultados.txt','a') as arquivo:
     arquivo.write(str('Accuracy: %.2f' % accuracy_score(Y, y_pred)))
-    
+    arquivo.close()
+
 print('Accuracy: %.2f' % accuracy_score(Y, y_pred))
