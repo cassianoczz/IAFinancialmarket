@@ -25,6 +25,7 @@ print(y_pred)
 
 with open('Resultados.txt','a') as arquivo:
     arquivo.write('-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
+    arquivo.write('\n')
     arquivo.write(str(DateTime))
     arquivo.write('\n')
     arquivo.write(str(CaminhoTabela))
