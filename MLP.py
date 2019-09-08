@@ -6,8 +6,8 @@ from datetime import datetime
 DTNow = datetime.now()
 DateTime = DTNow.strftime("%d/%m/%Y %H:%M:%S") 
 
-CaminhoTabela == '~/IAFinancialmarket/BTC_USD_1.2.1P.csv'
-tabela = pd.read_csv(r'CaminhoTabela')
+CaminhoTabela = r'~/IAFinancialmarket/BTC_USD_1.2.1P.csv'
+tabela = pd.read_csv(CaminhoTabela)
 
 df = pd.DataFrame(tabela)
 print(df)
@@ -26,7 +26,7 @@ print(y_pred)
 with open('Resultados.txt','a') as arquivo:
     arquivo.write(str(DateTime))
     arquivo.write("/n")
-    arquivo.write(str(tabela))
+    arquivo.write(str(CaminhoTabela))
     arquivo.write("/n")
     arquivo.write(str(X.index(1)))
     arquivo.write("/n")
