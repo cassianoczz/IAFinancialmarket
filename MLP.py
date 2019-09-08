@@ -22,7 +22,7 @@ y_pred = ppn.predict(X)
 
 print(y_pred)
 
-with open('Resultados.txt','a') as arquivo
+with open('Resultados.txt','a') as arquivo:
     arquivo.write(str(DateTime"\n"))
     arquivo.write(str(tabela"\n"))
     arquivo.write(str('X: 'X"\n"))
