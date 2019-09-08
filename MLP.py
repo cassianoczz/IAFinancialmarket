@@ -28,7 +28,7 @@ with open('Resultados.txt','a') as arquivo:
     arquivo.write('\n')
     arquivo.write(str(CaminhoTabela))
     arquivo.write('\n')
-    arquivo.write(str(tabela.index(0)))
+    arquivo.write(str(df.head(1)))
     arquivo.write('\n')
     arquivo.write(str(ppn))
     arquivo.write('\n')
