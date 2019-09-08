@@ -23,12 +23,12 @@ y_pred = ppn.predict(X)
 print(y_pred)
 
 with open('Resultados.txt','a') as arquivo:
-    arquivo.write(str(DateTime"\n"))
-    arquivo.write(str(tabela"\n"))
-    arquivo.write(str('X: 'X"\n"))
-    arquivo.write(str('Y: 'X"\n"))
-    arquivo.write(str(ppn"\n"))
-    arquivo.write(str(' Accuracy: %.2f ' % accuracy_score(Y, y_pred)"\n"))
+    arquivo.write(str(DateTime))
+    arquivo.write(str(tabela))
+    arquivo.write(str(X))
+    arquivo.write(str(Y))
+    arquivo.write(str(ppn))
+    arquivo.write(str(' Accuracy: %.2f ' % accuracy_score(Y, y_pred)))
     arquivo.close()
 
 print('Accuracy: %.2f' % accuracy_score(Y, y_pred))
