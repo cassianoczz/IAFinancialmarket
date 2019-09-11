@@ -6,14 +6,14 @@ from datetime import datetime
 DTNow = datetime.now()
 DateTime = DTNow.strftime("%d/%m/%Y %H:%M:%S") 
 
-CaminhoTabela = r'~/IAFinancialmarket/B3SA3_1.2.1.csv'
+CaminhoTabela = r'~/IAFinancialmarket/B3SA3_1.2.1P.csv'
 tabela = pd.read_csv(CaminhoTabela)
 
 df = pd.DataFrame(tabela)
-df = df[pd.isfinite(df['Gender'])]
-print(df)
 
-X = df[['Fechamento','Abertura','Maxima','Minima','Chikou','Tekan','Kinju','Senkou A','Senkou B','Chikou0','Chikou1','Chikou2','T/K 0','T/K 1','T/K 2','Preco X T/K 0','Preco X T/K 1','Preco X T/K 2','Kumo 0','Kumo 1','Kumo 2']]
+print(df)
+#'Fechamento','Abertura','Maxima','Minima','Chikou','Tekan','Kinju','Senkou A','Senkou B',
+X = df[['Chikou0','Chikou1','Chikou2','T/K 0','T/K 1','T/K 2','Preco X T/K 0','Preco X T/K 1','Preco X T/K 2','Kumo 0','Kumo 1','Kumo 2']]
 Y = df['Resultado']
 
 ppn = MLPClassifier()
