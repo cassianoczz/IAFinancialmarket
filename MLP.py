@@ -23,6 +23,8 @@ ppn.fit(X, Y)
 
 y_pred = ppn.predict(X)
 
+y_pred_log = predict_log_proba(X)
+
 print(y_pred)
 
 #np.savetxt('~/IAFinancialmarket/test.csv',y_pred,delimiter=',')
@@ -38,7 +40,7 @@ with open('Resultados.txt','a') as arquivo:
     arquivo.write('\n')
     arquivo.write(str(ppn))
     arquivo.write('\n')
-    arquivo.write(str(y_pred))
+    arquivo.write(str(y_pred_log))
     arquivo.write('\n')
     arquivo.write(str(' Accuracy: %.2f ' % accuracy_score(Y, y_pred)))
     arquivo.write('\n')
