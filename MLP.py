@@ -23,8 +23,7 @@ ppn.fit(X, Y)
 
 y_pred = ppn.predict(X)
 
-for i in y_pred:
-    print(y_pred)
+prediction = pd.DataFrame(y_pred, columns=['predictions']).to_csv('prediction.csv')
 
 #np.savetxt('~/IAFinancialmarket/test.csv',y_pred,delimiter=',')
 
