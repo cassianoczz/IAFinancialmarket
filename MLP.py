@@ -25,7 +25,7 @@ y_pred = ppn.predict(X)
 
 print(y_pred)
 
-np.genfromtxt('~/IAFinancialmarket/test.csv',y_pred,delimiter=',')
+#np.savetxt('~/IAFinancialmarket/test.csv',y_pred,delimiter=',')
 
 with open('Resultados.txt','a') as arquivo:
     arquivo.write('-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
@@ -37,6 +37,8 @@ with open('Resultados.txt','a') as arquivo:
     arquivo.write(str(df.head(1)))
     arquivo.write('\n')
     arquivo.write(str(ppn))
+    arquivo.write('\n')
+     arquivo.write(str(y_pred))
     arquivo.write('\n')
     arquivo.write(str(' Accuracy: %.2f ' % accuracy_score(Y, y_pred)))
     arquivo.write('\n')
