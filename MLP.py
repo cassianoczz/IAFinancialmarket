@@ -23,7 +23,7 @@ ppn.fit(X, Y)
 
 y_pred = ppn.predict(X)
 
-for i in y_pred
+for i in y_pred:
     print(y_pred)
 
 #np.savetxt('~/IAFinancialmarket/test.csv',y_pred,delimiter=',')
