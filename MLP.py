@@ -23,7 +23,7 @@ ppn.fit(X, Y)
 
 y_pred = ppn.predict(X)
 
-y_pred_log = predict_log_proba(X)
+y_pred_log = ppn.predict_log_proba(X)
 
 print(y_pred)
 
