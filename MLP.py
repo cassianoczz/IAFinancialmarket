@@ -23,7 +23,7 @@ ppn.fit(X, Y)
 
 y_pred = ppn.predict(X)
 
-prediction = pd.DataFrame(y_pred, columns=['predictions']).to_csv('prediction.csv')
+prediction = pd.DataFrame(y_pred, columns=['predictions']).to_csv('prediction1.csv')
 
 with open('Resultados.txt','a') as arquivo:
     arquivo.write('-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
