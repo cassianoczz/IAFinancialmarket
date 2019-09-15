@@ -25,7 +25,7 @@ y_pred = ppn.predict(X)
 
 print(y_pred)
 
-np.savetxt('~/IAFinancialmarket/test.csv',y_pred,delimiter=',')
+np.genfromtxt('~/IAFinancialmarket/test.csv',y_pred,delimiter=',')
 
 with open('Resultados.txt','a') as arquivo:
     arquivo.write('-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
