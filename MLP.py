@@ -7,7 +7,7 @@ import numpy as np
 DTNow = datetime.now()
 DateTime = DTNow.strftime("%d/%m/%Y %H:%M:%S") 
 
-CaminhoTabela = r'~/IAFinancialmarket/B3SA3_1.2.1P.csv'
+CaminhoTabela = r'~/IAFinancialmarket/BTC_USD_1.2.1P.csv'
 tabela = pd.read_csv(CaminhoTabela)
 
 df = pd.DataFrame(tabela)
@@ -24,8 +24,6 @@ ppn.fit(X, Y)
 y_pred = ppn.predict(X)
 
 prediction = pd.DataFrame(y_pred, columns=['predictions']).to_csv('prediction.csv')
-
-#np.savetxt('~/IAFinancialmarket/test.csv',y_pred,delimiter=',')
 
 with open('Resultados.txt','a') as arquivo:
     arquivo.write('-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
