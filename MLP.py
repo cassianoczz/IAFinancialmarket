@@ -2,6 +2,7 @@ from sklearn.neural_network import MLPClassifier
 import pandas as pd
 from sklearn.metrics import accuracy_score
 from datetime import datetime
+import numpy as np
 
 DTNow = datetime.now()
 DateTime = DTNow.strftime("%d/%m/%Y %H:%M:%S") 
@@ -23,6 +24,8 @@ ppn.fit(X, Y)
 y_pred = ppn.predict(X)
 
 print(y_pred)
+
+np.savetxt('~/IAFinancialmarket/test.csv',y_pred,delimiter=',')
 
 with open('Resultados.txt','a') as arquivo:
     arquivo.write('-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
