@@ -7,7 +7,7 @@ import re, sys, csv, time, random, json, requests, os
 from datetime import date
 from lxml import html
 from bs4 import BeautifulSoup
-from tkinter import filedialog 
+#from tkinter import filedialog 
 import pandas as pd
 
 ## TODO
