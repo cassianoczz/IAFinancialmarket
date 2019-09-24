@@ -7,7 +7,7 @@ import numpy as np
 DTNow = datetime.now()
 DateTime = DTNow.strftime("%d/%m/%Y %H:%M:%S") 
 
-CaminhoTabela = r'~/IAFinancialmarket/B3SA3.csv'
+CaminhoTabela = r'~/IAFinancialmarket/BTC_USD.csv'
 tabela = pd.read_csv(CaminhoTabela)
 
 df = pd.DataFrame(tabela)
