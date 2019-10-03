@@ -60,3 +60,73 @@ MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
        validation_fraction=0.1, verbose=False, warm_start=False)
 [0 0 0 ... 0 0 0]
  Accuracy: 0.97 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+24/09/2019 06:02:58
+~/IAFinancialmarket/BTC_USD.csv
+   Fechamento  Abertura  Maxima  Minima  Chikou  Tekan  Kinju  Senkou A  Senkou B  Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2  Resultado
+0       13.24     13.24   12.77   13.22   17.49  13.15  13.26     12.27     11.51        0        1        1      0      0      1              1              0              0       0       1       0          0
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(100,), learning_rate='constant',
+       learning_rate_init=0.001, max_iter=200, momentum=0.9,
+       n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+       random_state=None, shuffle=True, solver='adam', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False)
+[0 0 0 ... 0 0 0]
+ Accuracy: 0.95 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+24/09/2019 06:03:19
+~/IAFinancialmarket/BTC_USD.csv
+   Fechamento  Abertura  Maxima  Minima  Chikou  Tekan  Kinju  Senkou A  Senkou B  Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2  Resultado
+0       13.24     13.24   12.77   13.22   17.49  13.15  13.26     12.27     11.51        0        1        1      0      0      1              1              0              0       0       1       0          0
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(100,), learning_rate='constant',
+       learning_rate_init=0.001, max_iter=200, momentum=0.9,
+       n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+       random_state=None, shuffle=True, solver='adam', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False)
+[0 0 0 ... 0 0 0]
+ Accuracy: 0.98 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+24/09/2019 21:03:58
+~/IAFinancialmarket/BTC_USD.csv
+   Fechamento  Abertura  Maxima  Minima  Chikou  Tekan  Kinju  Senkou A  Senkou B  Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2  Resultado  predictions
+0       13.24     13.24   12.77   13.22   17.49  13.15  13.26     12.27     11.51        0        1        1      0      0      1              1              0              0       0       1       0          0            0
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(100,), learning_rate='constant',
+       learning_rate_init=0.001, max_iter=200, momentum=0.9,
+       n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+       random_state=None, shuffle=True, solver='adam', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False)
+[0 0 0 ... 0 0 0]
+ Accuracy: 0.97 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+28/09/2019 00:23:10
+~/IAFinancialmarket/BTC_USD.csv
+   Fechamento  Abertura  Maxima  Minima  Chikou  Tekan  Kinju  Senkou A  Senkou B  Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2  Resultado  predictions
+0       13.24     13.24   12.77   13.22   17.49  13.15  13.26     12.27     11.51        0        1        1      0      0      1              1              0              0       0       1       0          0            0
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(100,), learning_rate='constant',
+       learning_rate_init=0.001, max_iter=200, momentum=0.9,
+       n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+       random_state=None, shuffle=True, solver='adam', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False)
+[0 0 0 ... 0 0 0]
+ Accuracy: 0.75 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+02/10/2019 22:59:21
+~/IAFinancialmarket/BTC_USD.csv
+   Fechamento  Abertura  Maxima  Minima  Chikou  Tekan  Kinju  Senkou A  Senkou B  Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2  Resultado  predictions
+0       13.24     13.24   12.77   13.22   17.49  13.15  13.26     12.27     11.51        0        1        1      0      0      1              1              0              0       0       1       0          0            0
+MLPClassifier(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(100,), learning_rate='constant',
+       learning_rate_init=0.001, max_iter=200, momentum=0.9,
+       n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+       random_state=None, shuffle=True, solver='adam', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False)
+[0 0 0 ... 0 0 0]
+ Accuracy: 0.96 

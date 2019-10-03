@@ -3,7 +3,11 @@ import pandas as pd
 from sklearn.metrics import accuracy_score
 from datetime import datetime
 import numpy as np
+<<<<<<< HEAD
 #Producao
+=======
+# Producao
+>>>>>>> 5a9696a63196a2b537abe2e94205f4c82576a0f6
 from sklearn.externals import joblib
 
 DTNow = datetime.now()
@@ -25,7 +29,7 @@ ppn.fit(X, Y)
 
 y_pred = ppn.predict(X)
 
-#Producao
+# Producao
 joblib.dump(ppn, 'mlpBTC_USD.pk1')
 
 prediction = pd.DataFrame(y_pred, columns=['predictions']).to_csv('prediction1.csv')
