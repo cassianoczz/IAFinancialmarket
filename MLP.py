@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.metrics import accuracy_score
 from datetime import datetime
 import numpy as np
-##Produçao
+#Producao
 from sklearn.externals import joblib
 
 DTNow = datetime.now()
@@ -15,7 +15,7 @@ tabela = pd.read_csv(CaminhoTabela)
 df = pd.DataFrame(tabela)
 
 print(df)
-#
+
 X = df[['Fechamento','Abertura','Maxima','Minima','Chikou','Tekan','Kinju','Senkou A','Senkou B','Chikou0','Chikou1','Chikou2','T/K 0','T/K 1','T/K 2','Preco X T/K 0','Preco X T/K 1','Preco X T/K 2','Kumo 0','Kumo 1','Kumo 2']]
 Y = df['Resultado']
 

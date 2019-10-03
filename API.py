@@ -4,25 +4,25 @@ from flask import Flask, jsonify, request
 # [1] importo o deserializador
 from sklearn.externals import joblib 
 
-# [2] Carrego a classe de predição do diretório local
+# [2] Carrego a classe de predicao do diretorio local
 ppn = joblib.load('mlpBTC_USD.pk1')
 
 app = Flask(__name__)
 
 @app.route('/BTC_USD')
 def BTC_USD():
-    # [3] Recupero as informações de preço
+    # [3] Recupero as informacoes de preco
 	Fechamento = float(request.args.get('Fechamento')) 
 	Abertura = float(request.args.get('Abertura'))
 	Maxima = float(request.args.get('Maxima')) 
 	Minima = float(request.args.get('Minima'))
-	# [3] Recupero as informações de Ichimoku
+	# [3] Recupero as informacoes de Ichimoku
 	Chikou = float(request.args.get('Chikou'))
 	Tekan = float(request.args.get('Tekan'))
 	Kinju = float(request.args.get('Kinju'))
 	Senkou_A = float(request.args.get('Senkou_A'))
 	Senkou_B = float(request.args.get('Senkou_B'))
-	# [3] Daqui para baixo é so conta
+	# [3] Daqui para baixo eh so conta
 	Chikou0 = float(request.args.get('Chikou0'))
 	Chikou1 = float(request.args.get('Chikou1'))
 	Chikou2 = float(request.args.get('Chikou2'))
@@ -41,10 +41,10 @@ def BTC_USD():
 
 	result = {}
 
-    # [4] Realiza predição com base no evento
+    # [4] Realiza predicao com base no evento
 	prediction = ppn.predict([event])[0]
 
-    # [5] Realizar probabilidades individuais das três classes
+    # [5] Realizar probabilidades individuais das tres classes
 	probas = zip(target_names, ppn.predict_proba([event])[0])
 
     # [6] Recupera o nome real da classe
