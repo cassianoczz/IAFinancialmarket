@@ -3,11 +3,7 @@ import pandas as pd
 from sklearn.metrics import accuracy_score
 from datetime import datetime
 import numpy as np
-<<<<<<< HEAD
-#Producao
-=======
 # Producao
->>>>>>> 5a9696a63196a2b537abe2e94205f4c82576a0f6
 from sklearn.externals import joblib
 
 DTNow = datetime.now()
@@ -18,6 +14,9 @@ tabela = pd.read_csv(CaminhoTabela)
 
 df = pd.DataFrame(tabela)
 
+split  75% teste random
+25% treino random
+
 print(df)
 
 X = df[['Fechamento','Abertura','Maxima','Minima','Chikou','Tekan','Kinju','Senkou A','Senkou B','Chikou0','Chikou1','Chikou2','T/K 0','T/K 1','T/K 2','Preco X T/K 0','Preco X T/K 1','Preco X T/K 2','Kumo 0','Kumo 1','Kumo 2']]
@@ -25,9 +24,11 @@ Y = df['Resultado']
 
 ppn = MLPClassifier()
 
-ppn.fit(X, Y)
+ppn.fit(X, Y) # treinei
 
-y_pred = ppn.predict(X)
+X_teste = 
+
+y_pred = ppn.predict(X) # predicao
 
 # Producao
 joblib.dump(ppn, 'mlpBTC_USD.pk1')
@@ -52,3 +53,6 @@ with open('Resultados.txt','a') as arquivo:
     arquivo.close()
 
 print('Accuracy: %.2f' % accuracy_score(Y, y_pred))
+
+
+# escrever na base de dados
