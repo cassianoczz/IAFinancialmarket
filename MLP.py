@@ -11,30 +11,24 @@ DTNow = datetime.now()
 DateTime = DTNow.strftime("%d/%m/%Y %H:%M:%S") 
 
 CaminhoTabela = r'~/Documentos/IAFinancialmarket/BTC_USD.csv'
+CaminhoTabela_test = r'~/Documentos/IAFinancialmarket/BTC_USD_TEST.csv'
+
 tabela = pd.read_csv(CaminhoTabela)
+tabela_test = pd.read_csv(CaminhoTabela_test)
 
 df = pd.DataFrame(tabela)
-
-print(df)
+df_test = pd.DataFrame(tabela_test)
 
 X = df[['Chikou0','Chikou1','Chikou2','T/K 0','T/K 1','T/K 2','Preco X T/K 0','Preco X T/K 1','Preco X T/K 2','Kumo 0','Kumo 1','Kumo 2']]
 Y = df['Resultado']
+X_test_manual = df_test[['Chikou0','Chikou1','Chikou2','T/K 0','T/K 1','T/K 2','Preco X T/K 0','Preco X T/K 1','Preco X T/K 2','Kumo 0','Kumo 1','Kumo 2']]
+y_test_manual = df_test['Resultado']
 
 X_train, X_test, y_train, y_test = train_test_split(X, Y, train_size=0.75, random_state=0, stratify=Y)
 
 ppn = MLPClassifier()
 
 ppn.fit(X_train, y_train)
-
-CaminhoTabela_test = r'~/Documentos/IAFinancialmarket/BTC_USD_TEST.csv'
-tabela_test = pd.read_csv(CaminhoTabela_test)
-
-df_test = pd.DataFrame(tabela_test)
-
-print(df_test)
-
-X_test_manual = df_test[['Chikou0','Chikou1','Chikou2','T/K 0','T/K 1','T/K 2','Preco X T/K 0','Preco X T/K 1','Preco X T/K 2','Kumo 0','Kumo 1','Kumo 2']]
-y_test_manual = df_test['Resultado']
 
 y_pred = ppn.predict(X_test_manual)
 
