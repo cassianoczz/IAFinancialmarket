@@ -35,6 +35,15 @@ y_pred = ppn.predict(X_test_manual)
 # Producao
 # joblib.dump(ppn, 'mlpBTC_USD.pk1')
 
+# A Seguir uma imagem com modelo que recebe duas entradas na camada um. 
+# A camada dois, abriga duas funções de pertinência para cada entrada, mapeado para cada conjunto nebuloso. 
+# Esses podem ser otimizados com algoritmos de treinamento ou de otimização. 
+# A terceira camada, possui funções de ativação fixas. 
+# A camada quatro, é responsável pela normalização dos valores processados anteriormente. 
+# A quinta camada, é interligada com entrada para o processamento da função de ativação, que também pode passar por um processo de aprendizagem. 
+# Na última camada, é feito o somatório de todas as saídas anteriores, assim apresentando a saída de ANFIS (Fonseca 2012). 
+
+
 prediction = pd.DataFrame(y_pred, columns=['predictions']).to_csv('prediction.csv')
 
 with open('Resultados.txt','a') as arquivo:
