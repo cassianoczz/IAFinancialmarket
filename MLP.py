@@ -4,6 +4,9 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 from datetime import datetime
 import numpy as np
+import skfuzzy as fuzz
+from skfuzzy import control as ctrl
+
 # Producao
 # from sklearn.externals import joblib
 
@@ -71,3 +74,79 @@ with open('Resultados.txt','a') as arquivo:
     arquivo.close()
 
 print('Accuracy: %.2f' % accuracy_score(y_test_manual, y_pred))
+
+# New Antecedent/Consequent objects hold universe variables and membership
+# functions
+
+RNA = ctrl.Antecedent(y_pred, 'RNA')
+PreçoxNuvem = ctrl.Antecedent(np.arange(0, 11, 1), 'PreçoxNuvem')
+SenkouBfuturaReta = ctrl.Antecedent(np.arange(0, 11, 1), 'SenkouBfuturaReta')
+KumoGrossa = ctrl.Antecedent(np.arange(0, 11, 1), 'KumoGrossa')
+PreçoLongeKinju = ctrl.Antecedent(np.arange(0, 11, 1), 'PreçoLongeKinju')
+Pullback = ctrl.Antecedent(np.arange(0, 11, 1), 'Pullback')
+Lateralizacao = ctrl.Antecedent(np.arange(0, 11, 1), 'Lateralizacao')
+
+# Auto-membership function population is possible with .automf(3, 5, or 7)
+PreçoxNuvem.automf(3)
+SenkouBfuturaReta.automf(3)
+KumoGrossa.automf(3)
+PreçoLongeKinju.automf(3)
+Pullback.automf(3)
+Lateralizacao.automf(3)
+
+def Comprado():
+    comprado = ctrl.Consequent(np.arange(0, 100, 1), 'comprado')
+
+    comprado['baixo'] = fuzz.trimf(comprado.universe, [0, 0, 40])
+    comprado['medio'] = fuzz.trimf(comprado.universe, [0, 40, 60])
+    comprado['alto'] = fuzz.trimf(comprado.universe, [40, 60, 100])
+
+    rule1 = ctrl.Rule(RNA['comprado'] & PreçoxNuvem['perto'] & SenkouBfuturaReta['baixo'] & KumoGrossa['pouco'] & PreçoLongeKinju['perto'], comprado['alto'])
+    rule2 = ctrl.Rule(RNA['comprado'] & (PreçoxNuvem['dentro'] | SenkouBfuturaReta['mediano']) & KumoGrossa['mediano'] & (PreçoLongeKinju['mediano'] | Pullback['talvez']) & Lateralizacao['pouco'], comprado['medio'])
+    rule3 = ctrl.Rule(RNA['comprado'] & PreçoxNuvem['longe'] & SenkouBfuturaReta['bastante'] & KumoGrossa['bastante'] & PreçoLongeKinju['perto'] & (Lateralizacao['bastante'] & Pullback['nao']), comprado['alto'])
+    
+    return rule1, rule2, rule3
+
+def Aguardar():
+    aguardar = ctrl.Consequent(np.arange(0, 100, 1), 'aguardar')
+    
+    aguardar['baixo'] = fuzz.trimf(aguardar.universe, [0, 0, 40])
+    aguardar['medio'] = fuzz.trimf(aguardar.universe, [0, 40, 60])
+    aguardar['alto'] = fuzz.trimf(aguardar.universe, [40, 60, 100])
+    
+    rule1 = ctrl.Rule(quality['poor'] | service['poor'], tip['baixo'])
+    rule2 = ctrl.Rule(service['average'], tip['medio'])
+    rule3 = ctrl.Rule(service['good'] | quality['good'], tip['alto'])
+
+def Vendido():
+    vendido = ctrl.Consequent(np.arange(0, 100, 1), 'vendido')
+    
+    vendido['baixo'] = fuzz.trimf(vendido.universe, [0, 0, 40])
+    vendido['medio'] = fuzz.trimf(vendido.universe, [0, 40, 60])
+    vendido['alto'] = fuzz.trimf(vendido.universe, [40, 60, 100])
+    
+    rule1 = ctrl.Rule(quality['poor'] | service['poor'], tip['baixo'])
+    rule2 = ctrl.Rule(service['average'], tip['medio'])
+    rule3 = ctrl.Rule(service['good'] | quality['good'], tip['alto'])
+
+
+if RNA = comprado 
+fuzzy.comprado()
+return medio fraco
+else fuzzy.aguardar
+return medio fraco
+else fuzzy.vendido
+
+if RNA = aguardar 
+fuzzy.aguardar()
+return medio fraco
+else fuzzy.comprado
+return medio fraco
+else fuzzy.vendido
+
+if RNA = vendido 
+fuzzy.vendido()
+return medio fraco
+else fuzzy.comprado
+return medio fraco
+else fuzzy.aguardar
