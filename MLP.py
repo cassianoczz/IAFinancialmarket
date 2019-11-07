@@ -131,7 +131,7 @@ def Comprado():
     comprado_ctrl_Sim.input['PrecoLongeKinju'] = 0
     comprado_ctrl_Sim.input['Pullback'] = 2
     comprado_ctrl_Sim.input['KinjuReta'] = 2
-    comprado_ctrl_Sim.input['Lateralizacao'] = 1
+    comprado_ctrl_Sim.input['Lateralizacao'] = 2
 
     # Crunch the numbers
     comprado_ctrl_Sim.compute()
@@ -147,14 +147,22 @@ def Aguardar():
     #aguardar['medio'] = fuzz.trimf(aguardar.universe, [0, 40, 60])
     #aguardar['forte'] = fuzz.trimf(aguardar.universe, [40, 60, 100])
     
-    regra1 = ctrl.Rule(RNA['aguardar'] & SenkouBfuturaReta['good'] & Lateralizacao['good'] & Pullback['poor'] & KinjuReta['good'], aguardar['good'])
-    regra2 = ctrl.Rule(RNA['aguardar'] & PrecoxNuvem['poor'] & SenkouBfuturaReta['average'] & Pullback['poor'] & Lateralizacao['average'], aguardar['average'])
-    regra3 = ctrl.Rule(RNA['aguardar'] & PrecoxNuvem['average'] & SenkouBfuturaReta['poor'] | KinjuReta['poor'] | Lateralizacao['poor'], aguardar['poor'])
+    regra1 = ctrl.Rule(SenkouBfuturaReta['good'] & Lateralizacao['good'] & Pullback['poor'] & KinjuReta['good'], aguardar['good'])
+    regra2 = ctrl.Rule(PrecoxNuvem['poor'] & SenkouBfuturaReta['average'] & Pullback['poor'] & Lateralizacao['average'], aguardar['average'])
+    regra3 = ctrl.Rule(PrecoxNuvem['average'] & SenkouBfuturaReta['poor'] | KinjuReta['poor'] | Lateralizacao['poor'], aguardar['poor'])
 
     #regra1.view()
 
     aguardar_ctrl = ctrl.ControlSystem([regra1, regra2, regra3])
     aguardar_ctrl_Sim = ctrl.ControlSystemSimulation(aguardar_ctrl)
+
+    aguardar_ctrl_Sim.input['PrecoxNuvem'] = 2
+    aguardar_ctrl_Sim.input['SenkouBfuturaReta'] = 9
+    #aguardar_ctrl_Sim.input['KumoGrossa'] = 2
+    #aguardar_ctrl_Sim.input['PrecoLongeKinju'] = 0
+    aguardar_ctrl_Sim.input['Pullback'] = 2
+    aguardar_ctrl_Sim.input['KinjuReta'] = 2
+    aguardar_ctrl_Sim.input['Lateralizacao'] = 2
 
     # Crunch the numbers
     aguardar_ctrl_Sim.compute()
@@ -170,14 +178,24 @@ def Vendido():
     # vendido['medio'] = fuzz.trimf(vendido.universe, [0, 40, 60])
     # vendido['forte'] = fuzz.trimf(vendido.universe, [40, 60, 100])
     
-    regra1 = ctrl.Rule(RNA['vendido'] & PrecoxNuvem['average'] & SenkouBfuturaReta['poor'] & KumoGrossa['poor'] & (PrecoLongeKinju['average'] | (KinjuReta['good'] & PrecoLongeKinju['good'] | Pullback['good'])), vendido['good'])
-    regra2 = ctrl.Rule(RNA['vendido'] & (PrecoxNuvem['poor'] | SenkouBfuturaReta['average']) & KumoGrossa['average'] & (PrecoLongeKinju['average'] | Pullback['average']) & Lateralizacao['average'], vendido['average'])
-    regra3 = ctrl.Rule(RNA['vendido'] & SenkouBfuturaReta['good'] & KumoGrossa['good'] & Lateralizacao['good'], vendido['poor'])
+    regra1 = ctrl.Rule(PrecoxNuvem['average'] & SenkouBfuturaReta['poor'] & KumoGrossa['poor'] & (PrecoLongeKinju['average'] | (KinjuReta['good'] & PrecoLongeKinju['good'] | Pullback['good'])), vendido['good'])
+    regra2 = ctrl.Rule((PrecoxNuvem['poor'] | SenkouBfuturaReta['average']) & KumoGrossa['average'] & (PrecoLongeKinju['average'] | Pullback['average']) & Lateralizacao['average'], vendido['average'])
+    regra3 = ctrl.Rule(SenkouBfuturaReta['good'] & KumoGrossa['good'] & Lateralizacao['good'], vendido['poor'])
 
-    #regra1.view()
+    regra1.view()
 
     vendido_ctrl = ctrl.ControlSystem([regra1, regra2, regra3])
     vendido_ctrl_Sim = ctrl.ControlSystemSimulation(vendido_ctrl)
+
+    #comprado_ctrl_Sim.inputs(['PrecoxNuvem'] = 2,['SenkouBfuturaReta'] = 9)
+
+    comprado_ctrl_Sim.input['PrecoxNuvem'] = 1
+    comprado_ctrl_Sim.input['SenkouBfuturaReta'] = 9
+    comprado_ctrl_Sim.input['KumoGrossa'] = 1
+    comprado_ctrl_Sim.input['PrecoLongeKinju'] = 0
+    comprado_ctrl_Sim.input['Pullback'] = 1
+    comprado_ctrl_Sim.input['KinjuReta'] = 1
+    comprado_ctrl_Sim.input['Lateralizacao'] = 1
 
     # Crunch the numbers
     vendido_ctrl_Sim.compute()
@@ -186,7 +204,9 @@ def Vendido():
 
 
 # if RNA = comprado 
-print (Comprado())
+print(Comprado())
+print(Aguardar())
+print(Comprado())
 # return medium fraco
 # else fuzzy.aguardar
 # return medium fraco
