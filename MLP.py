@@ -1,6 +1,9 @@
 from sklearn.neural_network import MLPClassifier
 import pandas as pd
 from sklearn.metrics import accuracy_score
+from sklearn.metrics import recall_score
+from sklearn.metrics import precision_score
+from sklearn.metrics import f1_score
 from sklearn.model_selection import train_test_split
 from datetime import datetime
 import numpy as np
@@ -27,7 +30,7 @@ Y = df['Resultado']
 
 X_train, X_test, y_train, y_test = train_test_split(X, Y, train_size=0.75, random_state=0, stratify=Y)
 
-ppn = MLPClassifier(activation="tanh", max_iter=1000)
+ppn = MLPClassifier()
 
 ppn.fit(X_train, y_train)
 
@@ -41,34 +44,38 @@ y_pred = ppn.predict(X_test)
 # A quinta camada, e interligada com entrada para o processamento da funcao de ativacao, que tambem pode passar por um processo de aprendizagem. 
 # Na ultima camada, e feito o somatorio de todas as saidas anteriores, assim apresentando a saida de ANFIS (Fonseca 2012). 
 
+#retirar a tabela de precisao
+#prediction = pd.DataFrame(y_pred, columns=['predictions']).to_csv('prediction.csv')
 
-prediction = pd.DataFrame(y_pred, columns=['predictions']).to_csv('prediction.csv')
+# with open('Resultados.txt','a') as arquivo:
+#     arquivo.write('-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
+#     arquivo.write('\n')
+#     arquivo.write(str(DateTime))
+#     arquivo.write('\n')
+#     arquivo.write(str(CaminhoTabela))
+#     arquivo.write('\n')
+#     #arquivo.write(str(df.head(1)))
+#     arquivo.write(str(X.head(1)))
+#     arquivo.write('\n')
+#     arquivo.write(str(ppn))
+#     arquivo.write('\n')
+#     arquivo.write(str(train_test_split))
+#     arquivo.write('\n')
+#     # arquivo.write(str(CaminhoTabela_test))
+#     # arquivo.write('\n')
+#     # arquivo.write(str(X_test_manual.head(1)))
+#     # arquivo.write('\n')
+#     # arquivo.write(str(y_pred))
+#     # arquivo.write('\n')
+#     arquivo.write(str(' Accuracy: %.2f ' % accuracy_score(y_test, y_pred)))
+#     arquivo.write('\n')
+#     arquivo.close()
 
-with open('Resultados.txt','a') as arquivo:
-    arquivo.write('-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------')
-    arquivo.write('\n')
-    arquivo.write(str(DateTime))
-    arquivo.write('\n')
-    arquivo.write(str(CaminhoTabela))
-    arquivo.write('\n')
-    #arquivo.write(str(df.head(1)))
-    arquivo.write(str(X.head(1)))
-    arquivo.write('\n')
-    arquivo.write(str(ppn))
-    arquivo.write('\n')
-    arquivo.write(str(train_test_split))
-    arquivo.write('\n')
-    # arquivo.write(str(CaminhoTabela_test))
-    # arquivo.write('\n')
-    # arquivo.write(str(X_test_manual.head(1)))
-    # arquivo.write('\n')
-    # arquivo.write(str(y_pred))
-    # arquivo.write('\n')
-    arquivo.write(str(' Accuracy: %.2f ' % accuracy_score(y_test, y_pred)))
-    arquivo.write('\n')
-    arquivo.close()
-
-print('Accuracy: %.2f' % accuracy_score(y_test, y_pred))
+#metricas
+#print('Accuracy: %.2f' % accuracy_score(y_test, y_pred))
+print(recall_score(y_test, y_pred, average='micro'))
+print(precision_score(y_test, y_pred, average='micro'))
+print(f1_score(y_test, y_pred, average='micro'))
 
 # # New Antecedent/Consequent objects hold universe variables and membership
 # # functions
