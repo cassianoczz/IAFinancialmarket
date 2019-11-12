@@ -1,0 +1,140 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/11/2019 09:57:48
+~/Documentos/IAFinancialmarket/BTC_USD.csv
+   Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2
+0        0        1        1      0      0      1              1              0              0       0       1       0
+MLPClassifier(activation='tanh', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(100,), learning_rate='constant',
+       learning_rate_init=0.001, max_iter=1000, momentum=0.9,
+       n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+       random_state=None, shuffle=True, solver='adam', tol=0.0001,
+       validation_fraction=0.1, verbose=False, warm_start=False)
+<function train_test_split at 0x7eff53e2b848>
+ Accuracy: 1.00 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/11/2019 09:57:59
+~/Documentos/IAFinancialmarket/BTC_USD.csv
+   Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2
+0        0        1        1      0      0      1              1              0              0       0       1       0
+MLPClassifier(activation='tanh', alpha=0.0001, batch_size='auto', beta_1=0.9,
+              beta_2=0.999, early_stopping=False, epsilon=1e-08,
+              hidden_layer_sizes=(100,), learning_rate='constant',
+              learning_rate_init=0.001, max_iter=1000, momentum=0.9,
+              n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+              random_state=None, shuffle=True, solver='adam', tol=0.0001,
+              validation_fraction=0.1, verbose=False, warm_start=False)
+<function train_test_split at 0x7f85e01ea488>
+ Accuracy: 1.00 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/11/2019 09:58:06
+~/Documentos/IAFinancialmarket/BTC_USD.csv
+   Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2
+0        0        1        1      0      0      1              1              0              0       0       1       0
+MLPClassifier(activation='tanh', alpha=0.0001, batch_size='auto', beta_1=0.9,
+              beta_2=0.999, early_stopping=False, epsilon=1e-08,
+              hidden_layer_sizes=(100,), learning_rate='constant',
+              learning_rate_init=0.001, max_iter=1000, momentum=0.9,
+              n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+              random_state=None, shuffle=True, solver='adam', tol=0.0001,
+              validation_fraction=0.1, verbose=False, warm_start=False)
+<function train_test_split at 0x7f612bfe9488>
+ Accuracy: 1.00 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/11/2019 09:58:10
+~/Documentos/IAFinancialmarket/BTC_USD.csv
+   Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2
+0        0        1        1      0      0      1              1              0              0       0       1       0
+MLPClassifier(activation='tanh', alpha=0.0001, batch_size='auto', beta_1=0.9,
+              beta_2=0.999, early_stopping=False, epsilon=1e-08,
+              hidden_layer_sizes=(100,), learning_rate='constant',
+              learning_rate_init=0.001, max_iter=1000, momentum=0.9,
+              n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+              random_state=None, shuffle=True, solver='adam', tol=0.0001,
+              validation_fraction=0.1, verbose=False, warm_start=False)
+<function train_test_split at 0x7f868c09f488>
+ Accuracy: 1.00 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/11/2019 09:58:31
+~/Documentos/IAFinancialmarket/BTC_USD.csv
+   Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2
+0        0        1        1      0      0      1              1              0              0       0       1       0
+MLPClassifier(activation='tanh', alpha=0.0001, batch_size='auto', beta_1=0.9,
+              beta_2=0.999, early_stopping=False, epsilon=1e-08,
+              hidden_layer_sizes=(100,), learning_rate='constant',
+              learning_rate_init=0.001, max_iter=1000, momentum=0.9,
+              n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+              random_state=None, shuffle=True, solver='adam', tol=0.0001,
+              validation_fraction=0.1, verbose=False, warm_start=False)
+<function train_test_split at 0x7f834bcce488>
+ Accuracy: 1.00 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/11/2019 09:58:34
+~/Documentos/IAFinancialmarket/BTC_USD.csv
+   Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2
+0        0        1        1      0      0      1              1              0              0       0       1       0
+MLPClassifier(activation='tanh', alpha=0.0001, batch_size='auto', beta_1=0.9,
+              beta_2=0.999, early_stopping=False, epsilon=1e-08,
+              hidden_layer_sizes=(100,), learning_rate='constant',
+              learning_rate_init=0.001, max_iter=1000, momentum=0.9,
+              n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+              random_state=None, shuffle=True, solver='adam', tol=0.0001,
+              validation_fraction=0.1, verbose=False, warm_start=False)
+<function train_test_split at 0x7f1d4396f488>
+ Accuracy: 1.00 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/11/2019 09:58:37
+~/Documentos/IAFinancialmarket/BTC_USD.csv
+   Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2
+0        0        1        1      0      0      1              1              0              0       0       1       0
+MLPClassifier(activation='tanh', alpha=0.0001, batch_size='auto', beta_1=0.9,
+              beta_2=0.999, early_stopping=False, epsilon=1e-08,
+              hidden_layer_sizes=(100,), learning_rate='constant',
+              learning_rate_init=0.001, max_iter=1000, momentum=0.9,
+              n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+              random_state=None, shuffle=True, solver='adam', tol=0.0001,
+              validation_fraction=0.1, verbose=False, warm_start=False)
+<function train_test_split at 0x7fd5854e1488>
+ Accuracy: 1.00 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/11/2019 09:58:40
+~/Documentos/IAFinancialmarket/BTC_USD.csv
+   Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2
+0        0        1        1      0      0      1              1              0              0       0       1       0
+MLPClassifier(activation='tanh', alpha=0.0001, batch_size='auto', beta_1=0.9,
+              beta_2=0.999, early_stopping=False, epsilon=1e-08,
+              hidden_layer_sizes=(100,), learning_rate='constant',
+              learning_rate_init=0.001, max_iter=1000, momentum=0.9,
+              n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+              random_state=None, shuffle=True, solver='adam', tol=0.0001,
+              validation_fraction=0.1, verbose=False, warm_start=False)
+<function train_test_split at 0x7f16bca30488>
+ Accuracy: 1.00 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/11/2019 09:58:42
+~/Documentos/IAFinancialmarket/BTC_USD.csv
+   Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2
+0        0        1        1      0      0      1              1              0              0       0       1       0
+MLPClassifier(activation='tanh', alpha=0.0001, batch_size='auto', beta_1=0.9,
+              beta_2=0.999, early_stopping=False, epsilon=1e-08,
+              hidden_layer_sizes=(100,), learning_rate='constant',
+              learning_rate_init=0.001, max_iter=1000, momentum=0.9,
+              n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+              random_state=None, shuffle=True, solver='adam', tol=0.0001,
+              validation_fraction=0.1, verbose=False, warm_start=False)
+<function train_test_split at 0x7f8527721488>
+ Accuracy: 1.00 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/11/2019 09:58:45
+~/Documentos/IAFinancialmarket/BTC_USD.csv
+   Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2
+0        0        1        1      0      0      1              1              0              0       0       1       0
+MLPClassifier(activation='tanh', alpha=0.0001, batch_size='auto', beta_1=0.9,
+              beta_2=0.999, early_stopping=False, epsilon=1e-08,
+              hidden_layer_sizes=(100,), learning_rate='constant',
+              learning_rate_init=0.001, max_iter=1000, momentum=0.9,
+              n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+              random_state=None, shuffle=True, solver='adam', tol=0.0001,
+              validation_fraction=0.1, verbose=False, warm_start=False)
+<function train_test_split at 0x7fa7e07f9488>
+ Accuracy: 1.00 

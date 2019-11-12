@@ -11,7 +11,7 @@ import numpy as np
 DTNow = datetime.now()
 DateTime = DTNow.strftime("%d/%m/%Y %H:%M:%S") 
 
-CaminhoTabela = r'~/Documentos/IAFinancialmarket/BTC_USD.csv'
+CaminhoTabela = r'~/Documentos/IAFinancialmarket/B3SA3.csv'
 #CaminhoTabela_test = r'~/Documentos/IAFinancialmarket/BTC_USD_TEST.csv'
 
 tabela = pd.read_csv(CaminhoTabela)
@@ -27,7 +27,7 @@ Y = df['Resultado']
 
 X_train, X_test, y_train, y_test = train_test_split(X, Y, train_size=0.75, random_state=0, stratify=Y)
 
-ppn = MLPClassifier()
+ppn = MLPClassifier(activation="tanh", max_iter=1000)
 
 ppn.fit(X_train, y_train)
 

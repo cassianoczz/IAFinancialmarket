@@ -1,0 +1,140 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/11/2019 06:59:21
+~/Documentos/IAFinancialmarket/B3SA3.csv
+   Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2
+0        0        1        0      0      1      0              0              1              0       0       1       0
+MLPClassifier(activation='logistic', alpha=0.0001, batch_size='auto',
+              beta_1=0.9, beta_2=0.999, early_stopping=False, epsilon=1e-08,
+              hidden_layer_sizes=(100,), learning_rate='constant',
+              learning_rate_init=0.001, max_iter=1000, momentum=0.9,
+              n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+              random_state=None, shuffle=True, solver='adam', tol=0.0001,
+              validation_fraction=0.1, verbose=False, warm_start=False)
+<function train_test_split at 0x7fc9dfe9d488>
+ Accuracy: 0.99 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/11/2019 06:59:46
+~/Documentos/IAFinancialmarket/B3SA3.csv
+   Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2
+0        0        1        0      0      1      0              0              1              0       0       1       0
+MLPClassifier(activation='logistic', alpha=0.0001, batch_size='auto',
+              beta_1=0.9, beta_2=0.999, early_stopping=False, epsilon=1e-08,
+              hidden_layer_sizes=(100,), learning_rate='constant',
+              learning_rate_init=0.001, max_iter=1000, momentum=0.9,
+              n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+              random_state=None, shuffle=True, solver='adam', tol=0.0001,
+              validation_fraction=0.1, verbose=False, warm_start=False)
+<function train_test_split at 0x7fc7cae9d488>
+ Accuracy: 0.99 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/11/2019 06:59:55
+~/Documentos/IAFinancialmarket/B3SA3.csv
+   Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2
+0        0        1        0      0      1      0              0              1              0       0       1       0
+MLPClassifier(activation='logistic', alpha=0.0001, batch_size='auto',
+              beta_1=0.9, beta_2=0.999, early_stopping=False, epsilon=1e-08,
+              hidden_layer_sizes=(100,), learning_rate='constant',
+              learning_rate_init=0.001, max_iter=1000, momentum=0.9,
+              n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+              random_state=None, shuffle=True, solver='adam', tol=0.0001,
+              validation_fraction=0.1, verbose=False, warm_start=False)
+<function train_test_split at 0x7fe5b13bb488>
+ Accuracy: 0.99 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/11/2019 06:59:58
+~/Documentos/IAFinancialmarket/B3SA3.csv
+   Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2
+0        0        1        0      0      1      0              0              1              0       0       1       0
+MLPClassifier(activation='logistic', alpha=0.0001, batch_size='auto',
+              beta_1=0.9, beta_2=0.999, early_stopping=False, epsilon=1e-08,
+              hidden_layer_sizes=(100,), learning_rate='constant',
+              learning_rate_init=0.001, max_iter=1000, momentum=0.9,
+              n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+              random_state=None, shuffle=True, solver='adam', tol=0.0001,
+              validation_fraction=0.1, verbose=False, warm_start=False)
+<function train_test_split at 0x7f8b0e8eb488>
+ Accuracy: 0.99 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/11/2019 07:00:01
+~/Documentos/IAFinancialmarket/B3SA3.csv
+   Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2
+0        0        1        0      0      1      0              0              1              0       0       1       0
+MLPClassifier(activation='logistic', alpha=0.0001, batch_size='auto',
+              beta_1=0.9, beta_2=0.999, early_stopping=False, epsilon=1e-08,
+              hidden_layer_sizes=(100,), learning_rate='constant',
+              learning_rate_init=0.001, max_iter=1000, momentum=0.9,
+              n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+              random_state=None, shuffle=True, solver='adam', tol=0.0001,
+              validation_fraction=0.1, verbose=False, warm_start=False)
+<function train_test_split at 0x7f1afb638488>
+ Accuracy: 0.99 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/11/2019 07:00:04
+~/Documentos/IAFinancialmarket/B3SA3.csv
+   Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2
+0        0        1        0      0      1      0              0              1              0       0       1       0
+MLPClassifier(activation='logistic', alpha=0.0001, batch_size='auto',
+              beta_1=0.9, beta_2=0.999, early_stopping=False, epsilon=1e-08,
+              hidden_layer_sizes=(100,), learning_rate='constant',
+              learning_rate_init=0.001, max_iter=1000, momentum=0.9,
+              n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+              random_state=None, shuffle=True, solver='adam', tol=0.0001,
+              validation_fraction=0.1, verbose=False, warm_start=False)
+<function train_test_split at 0x7f248e246488>
+ Accuracy: 0.99 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/11/2019 07:00:07
+~/Documentos/IAFinancialmarket/B3SA3.csv
+   Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2
+0        0        1        0      0      1      0              0              1              0       0       1       0
+MLPClassifier(activation='logistic', alpha=0.0001, batch_size='auto',
+              beta_1=0.9, beta_2=0.999, early_stopping=False, epsilon=1e-08,
+              hidden_layer_sizes=(100,), learning_rate='constant',
+              learning_rate_init=0.001, max_iter=1000, momentum=0.9,
+              n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+              random_state=None, shuffle=True, solver='adam', tol=0.0001,
+              validation_fraction=0.1, verbose=False, warm_start=False)
+<function train_test_split at 0x7fa5deef5488>
+ Accuracy: 0.99 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/11/2019 07:00:10
+~/Documentos/IAFinancialmarket/B3SA3.csv
+   Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2
+0        0        1        0      0      1      0              0              1              0       0       1       0
+MLPClassifier(activation='logistic', alpha=0.0001, batch_size='auto',
+              beta_1=0.9, beta_2=0.999, early_stopping=False, epsilon=1e-08,
+              hidden_layer_sizes=(100,), learning_rate='constant',
+              learning_rate_init=0.001, max_iter=1000, momentum=0.9,
+              n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+              random_state=None, shuffle=True, solver='adam', tol=0.0001,
+              validation_fraction=0.1, verbose=False, warm_start=False)
+<function train_test_split at 0x7f06dc9cb488>
+ Accuracy: 0.99 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/11/2019 07:00:13
+~/Documentos/IAFinancialmarket/B3SA3.csv
+   Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2
+0        0        1        0      0      1      0              0              1              0       0       1       0
+MLPClassifier(activation='logistic', alpha=0.0001, batch_size='auto',
+              beta_1=0.9, beta_2=0.999, early_stopping=False, epsilon=1e-08,
+              hidden_layer_sizes=(100,), learning_rate='constant',
+              learning_rate_init=0.001, max_iter=1000, momentum=0.9,
+              n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+              random_state=None, shuffle=True, solver='adam', tol=0.0001,
+              validation_fraction=0.1, verbose=False, warm_start=False)
+<function train_test_split at 0x7fabb823f488>
+ Accuracy: 0.99 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12/11/2019 07:00:15
+~/Documentos/IAFinancialmarket/B3SA3.csv
+   Chikou0  Chikou1  Chikou2  T/K 0  T/K 1  T/K 2  Preco X T/K 0  Preco X T/K 1  Preco X T/K 2  Kumo 0  Kumo 1  Kumo 2
+0        0        1        0      0      1      0              0              1              0       0       1       0
+MLPClassifier(activation='logistic', alpha=0.0001, batch_size='auto',
+              beta_1=0.9, beta_2=0.999, early_stopping=False, epsilon=1e-08,
+              hidden_layer_sizes=(100,), learning_rate='constant',
+              learning_rate_init=0.001, max_iter=1000, momentum=0.9,
+              n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+              random_state=None, shuffle=True, solver='adam', tol=0.0001,
+              validation_fraction=0.1, verbose=False, warm_start=False)
+<function train_test_split at 0x7f0d0a876488>
+ Accuracy: 0.99 
