@@ -14,7 +14,7 @@ import numpy as np
 DTNow = datetime.now()
 DateTime = DTNow.strftime("%d/%m/%Y %H:%M:%S") 
 
-CaminhoTabela = r'~/Documentos/IAFinancialmarket/B3SA3.csv'
+CaminhoTabela = r'd:\Users\Cassiano\Documents\Git\IAFinancialmarket\B3SA3.csv'
 #CaminhoTabela_test = r'~/Documentos/IAFinancialmarket/BTC_USD_TEST.csv'
 
 tabela = pd.read_csv(CaminhoTabela)
